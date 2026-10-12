@@ -52,7 +52,7 @@ jobs:
           ssh-keyscan $SERVER_ADDR >> ~/.ssh/known_hosts
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SERVER_ADDR: "195.201.116.145"
+          SERVER_ADDR: "141.94.197.228"
 
       - name: Deploy with Kamal
         run: kamal deploy
